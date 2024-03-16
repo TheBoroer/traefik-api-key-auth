@@ -126,7 +126,7 @@ func bearer(key string, validKeys []string) string {
 }
 
 func (ka *KeyAuth) ok(rw http.ResponseWriter, req *http.Request, key string) {
-	os.Stdout.WriteString(fmt.Sprintf("INFO: traefik_api_key_auth KEY %s URL %s\n", key, req.URL))
+	// os.Stdout.WriteString(fmt.Sprintf("INFO: traefik_api_key_auth KEY %s URL %s\n", key, req.URL))
 	if ka.internalForwardHeaderName != "" {
 		req.Header.Add(ka.internalForwardHeaderName, key)
 	}
