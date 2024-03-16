@@ -1,9 +1,9 @@
 ﻿displayName: API Key Auth
 type: middleware
 
-import: github.com/Septima/traefik-api-key-auth
+import: github.com/TheBoroer/traefik-api-key-auth
 
-summary: "Authorise API requests with an API Key"
+summary: "Easy api key access control to your endpoints. Supports header, queryparam and Bearer auth."
 
 testData:
   authenticationHeader: true
